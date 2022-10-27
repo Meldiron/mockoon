@@ -2,8 +2,8 @@
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-
-// @import '~bootstrap/scss/bootstrap';
+// Required
+@import '~bootstrap/scss/functions';
 // Color system
 
 // scss-docs-start gray-color-variables
@@ -1175,7 +1175,7 @@ $navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
 
 // scss-docs-start dropdown-variables
 $dropdown-min-width: 10rem !default;
-$dropdown-padding-x: 0 !default;
+$dropdown-padding-x: 0;
 $dropdown-padding-y: 0;
 $dropdown-spacer: 0.125rem !default;
 $dropdown-font-size: $font-size-base !default;
