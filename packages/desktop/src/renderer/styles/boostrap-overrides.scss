@@ -86,8 +86,7 @@
 label {
   color: $gray-400;
 }
-.input-group-prepend,
-.input-group-append {
+.input-group {
   .btn {
     // remove input group btn big padding 8/16px (do not know where it comes from)
     padding: 1px 6px;

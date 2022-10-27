@@ -18,7 +18,7 @@
             [items]="methods"
             dropdownId="methods"
           ></app-custom-select>
-          <div class="input-group-prepend">
+          <div class="input-group">
             <span class="input-group-text">/</span>
           </div>
           <input
@@ -32,7 +32,7 @@
 
           <div
             *ngIf="environmentsStatus$ | async as environmentsStatus"
-            class="input-group-prepend"
+            class="input-group"
             ngbTooltip="Open route in browser (GET method only)"
           >
             <button
@@ -51,7 +51,7 @@
               <app-svg icon="open_in_new"></app-svg>
             </button>
           </div>
-          <div class="input-group-prepend">
+          <div class="input-group">
             <span
               *ngIf="routeHasQueryParams()"
               class="input-group-text text-warning"
@@ -319,10 +319,7 @@
             </app-custom-select>
           </div>
           <div class="input-group">
-            <div
-              class="input-group-prepend ml-auto"
-              ngbTooltip="Response latency (ms)"
-            >
+            <div class="input-group ml-auto" ngbTooltip="Response latency (ms)">
               <span class="input-group-text">
                 <app-svg icon="access_time"></app-svg>
               </span>
@@ -407,7 +404,7 @@
             >
               <app-svg icon="clear"></app-svg>
             </button>
-            <div class="input-group-append">
+            <div class="input-group">
               <button
                 class="btn btn-link"
                 (click)="browseFiles()"
@@ -433,7 +430,7 @@
           <div class="input-group mt-2 px-2">
             <div
               *ngIf="activeRouteResponse.filePath"
-              class="input-group-append align-items-center ml-2"
+              class="input-group align-items-center ml-2"
             >
               <div class="custom-control custom-checkbox">
                 <input
@@ -521,7 +518,7 @@
                   >Disable templating in body and file content
                 </label>
               </div>
-              <div class="input-group-append ml-1">
+              <div class="input-group ml-1">
                 <app-svg
                   icon="info"
                   class="ml-1"
@@ -546,7 +543,7 @@
                   >Respond with 404 when the file path did not match any files
                 </label>
               </div>
-              <div class="input-group-append ml-1">
+              <div class="input-group ml-1">
                 <app-svg
                   icon="info"
                   class="ml-1"

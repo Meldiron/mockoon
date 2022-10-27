@@ -115,7 +115,7 @@
               />
 
               <div
-                class="input-group-prepend ml-auto"
+                class="input-group ml-auto"
                 *ngIf="deleteRuleRequested$ | async as deleteRuleRequested"
               >
                 <button
@@ -140,7 +140,7 @@
 
               <div
                 *ngIf="form.get('rules').value.length > 1"
-                class="input-group-prepend clickable"
+                class="input-group clickable"
                 ngbTooltip="Reorder"
                 cdkDragHandle
               >
